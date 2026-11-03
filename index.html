@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">My Website<span>.</span></h2>
+
+        <div class="menu-toggle" id="menuToggle">☰</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="dashboardBtn">Dashboard</button></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="subtitle">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hello, I'm <span>Your Name</span></h1>
+        <h2>Creative Professional</h2>
+        <p>
+            I create meaningful digital experiences through creativity,
+            professional skills and innovative thinking.
+        </p>
+        <a href="#projects" class="btn">Explore My Work</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+    </div>
+
+    <div class="hero-image">
+        <div class="profile-circle">YN</div>
+    </div>
+</section>
+
+<section class="about section" id="about">
+    <div class="section-title">
+        <p>GET TO KNOW ME</p>
+        <h2>About Me</h2>
+    </div>
+
+    <div class="about-content">
+        <p>
+            I am a dedicated professional passionate about learning,
+            problem-solving and delivering quality work. I believe in
+            continuous improvement and creating meaningful results.
+        </p>
+    </div>
+
+    <div class="stats">
+        <div><h3>05+</h3><p>Years Experience</p></div>
+        <div><h3>20+</h3><p>Projects</p></div>
+        <div><h3>100%</h3><p>Dedication</p></div>
+    </div>
+</section>
+
+<section class="section services" id="services">
+    <div class="section-title">
+        <p>WHAT I OFFER</p>
+        <h2>My Services</h2>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-icon">✦</div>
+            <h3>Professional Planning</h3>
+            <p>Strategic planning and practical problem-solving.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">⌘</div>
+            <h3>Quality Management</h3>
+            <p>Maintaining quality, consistency and efficiency.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">◎</div>
+            <h3>Continuous Learning</h3>
+            <p>Developing skills and improving performance.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section projects" id="projects">
+    <div class="section-title">
+        <p>MY RECENT WORK</p>
+        <h2>My Projects</h2>
+    </div>
+
+    <div class="card-container">
+        <div class="project-card">
+            <div class="project-image image-one">PROJECT 01</div>
+            <h3>Project One</h3>
+            <p>Planning and Strategy</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image image-two">PROJECT 02</div>
+            <h3>Project Two</h3>
+            <p>Process Improvement</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image image-three">PROJECT 03</div>
+            <h3>Project Three</h3>
+            <p>Research and Development</p>
+        </div>
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <div class="section-title">
+        <p>LET'S CONNECT</p>
+        <h2>Contact Me</h2>
+    </div>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p id="formStatus"></p>
+</section>
+
+<footer>
+    <h3>My Website.</h3>
+    <p>© <span id="year"></span> My Website. All Rights Reserved.</p>
+</footer>
+
+<div class="dashboard" id="dashboard">
+    <div class="dashboard-content">
+        <button class="close-btn" id="closeDashboard">×</button>
+        <h2>Admin Dashboard</h2>
+
+        <div class="dashboard-stats">
+            <div>
+                <h3 id="totalMessages">0</h3>
+                <p>Total Messages</p>
+            </div>
+        </div>
+
+        <h3>Contact Messages</h3>
+        <div id="messageList"></div>
+
+        <button class="btn" id="clearMessages">Clear Messages</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
